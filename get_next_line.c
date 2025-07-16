@@ -6,7 +6,7 @@
 /*   By: adavitas <adavitas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 16:42:12 by adavitas          #+#    #+#             */
-/*   Updated: 2025/07/16 20:16:03 by adavitas         ###   ########.fr       */
+/*   Updated: 2025/07/16 20:48:46 by adavitas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,10 @@ static char	*ft_get_next_buffer(char *buffer)
 	}
 	line = malloc(sizeof(char) * (ft_strlen(buffer) - i + 1));
 	if (!line)
+	{
+		free(buffer);
 		return (NULL);
+	}
 	i++;
 	j = 0;
 	while (buffer[i])
@@ -78,15 +81,13 @@ static char	*ft_read_and_join(int fd, char *buffer)
 		if (bytes_read == -1)
 		{
 			free(buff);
+			free(buffer);
 			return (NULL);
 		}
 		buff[bytes_read] = '\0';
 		buffer = ft_strjoin(buffer, buff);
 		if (!buffer)
-		{
-			free(buff);
-			return (NULL);
-		}
+			break ;
 	}
 	free(buff);
 	return (buffer);
@@ -101,7 +102,10 @@ char	*get_next_line(int fd)
 		return (NULL);
 	buffer = ft_read_and_join(fd, buffer);
 	if (!buffer)
+	{
+		buffer = NULL;
 		return (NULL);
+	}
 	line = ft_extract_line(buffer);
 	buffer = ft_get_next_buffer(buffer);
 	return (line);
