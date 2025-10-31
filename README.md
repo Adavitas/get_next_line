@@ -4,7 +4,7 @@
 
 ### *Read a line from a file descriptor, one line at a time*
 
-[![42 School](https://img.shields.io/badge/42-School-000000?style=for-the-badge&logoColor=white)](https://42.fr)
+[!(https://img.shields.io/badge/42-School-000000?style=for-the-badge&logo=42&logoColor=white)](https://42.fr)
 [![Language](https://img.shields.io/badge/Language-C-blue?style=for-the-badge&logo=c)](https://en.wikipedia.org/wiki/C_(programming_language))
 [![Norminette](https://img.shields.io/badge/Norminette-passing-success?style=for-the-badge)](https://github.com/42School/norminette)
 
