@@ -290,26 +290,6 @@ gcc -D BUFFER_SIZE=10000 get_next_line.c get_next_line_utils.c
 
 ---
 
-## 🤝 Contributing
-
-This is a school project, but feedback is welcome!
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -m 'Add improvement'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
-
----
-
-## 📜 License
-
-This project is part of the **42 School** curriculum.
-
-Feel free to use this code for learning purposes.
-
----
-
 ## 👨‍💻 Author
 
 **Adavitas** - *42 Student*
@@ -318,18 +298,11 @@ Feel free to use this code for learning purposes.
 
 ---
 
-## 🙏 Acknowledgments
 
-- 42 School for the project subject
-- Fellow 42 students for discussions and peer evaluations
-- The C programming community
+## 📝 License
+
+This project is part of the 42 School curriculum.
 
 ---
 
-<div align="center">
-
-### ⭐ If you found this helpful, consider giving it a star!
-
-**Made with ❤️ at 42 School**
-
-</div>
+*This project was created as part of the 42 School common core curriculum.*
