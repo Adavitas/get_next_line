@@ -37,11 +37,11 @@
 
 **Get Next Line** is a 42 school project that challenges students to create a function that reads and returns a single line from a file descriptor. This project emphasizes understanding of:
 
-- 📝 Static variables in C
-- 💾 Memory management and dynamic allocation
-- 📂 File descriptor manipulation
-- 🔄 Buffer management
-- 🐛 Edge case handling
+-  Static variables in C
+-  Memory management and dynamic allocation
+-  File descriptor manipulation
+-  Buffer management
+-  Edge case handling
 
 > This function can be used to read files line by line, handle standard input, or process data from multiple file descriptors simultaneously.
 
@@ -54,20 +54,20 @@
 <td>
 
 ### Core Functionality
-- ✅ Read from any file descriptor
-- ✅ Returns one line per call
-- ✅ Handles lines of any length
-- ✅ Configurable buffer size
-- ✅ Memory-leak free
+-  Read from any file descriptor
+-  Returns one line per call
+-  Handles lines of any length
+-  Configurable buffer size
+-  Memory-leak free
 
 </td>
 <td>
 
 ### Bonus Features
-- 🎁 Multiple FD support
-- 🎁 Simultaneous file reading
-- 🎁 Efficient memory usage
-- 🎁 Handles edge cases
+-  Multiple FD support
+-  Simultaneous file reading
+-  Efficient memory usage
+-  Handles edge cases
 
 </td>
 </tr>
@@ -213,13 +213,13 @@ char *get_next_line(int fd);
 ```
 get_next_line/
 │
-├── 📄 get_next_line.c              # Main implementation
-├── 📄 get_next_line.h              # Header file
-├── 📄 get_next_line_utils.c        # Helper functions
+├──  get_next_line.c              # Main implementation
+├──  get_next_line.h              # Header file
+├──  get_next_line_utils.c        # Helper functions
 │
-├── 🎁 get_next_line_bonus.c        # Bonus: Multiple FD support
-├── 🎁 get_next_line_bonus.h        # Bonus header
-├── 🎁 get_next_line_utils_bonus.c  # Bonus utilities
+├──  get_next_line_bonus.c        # Bonus: Multiple FD support
+├──  get_next_line_bonus.h        # Bonus header
+├──  get_next_line_utils_bonus.c  # Bonus utilities
 │
 └── 📖 README.md                    # This file
 ```
@@ -249,13 +249,13 @@ echo -e "Line 1\nLine 2\nLine 3" > test.txt
 
 | Test Case | Description |
 |-----------|-------------|
-| 📝 Normal files | Standard text files with regular lines |
-| 📄 Empty files | Files with no content |
-| 🔁 Only newlines | Files containing only `\n` characters |
-| 📏 Long lines | Lines exceeding buffer size |
-| 🔢 Large files | Files with thousands of lines |
-| ⌨️ stdin | Reading from standard input |
-| 🎭 Multiple FDs | Alternating between file descriptors |
+|  Normal files | Standard text files with regular lines |
+|  Empty files | Files with no content |
+|  Only newlines | Files containing only `\n` characters |
+|  Long lines | Lines exceeding buffer size |
+|  Large files | Files with thousands of lines |
+|  stdin | Reading from standard input |
+|  Multiple FDs | Alternating between file descriptors |
 
 ### Buffer Size Testing
 
