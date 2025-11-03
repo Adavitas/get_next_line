@@ -9,12 +9,6 @@
 [![Norminette](https://img.shields.io/badge/Norminette-passing-success?style=for-the-badge)](https://github.com/42School/norminette)
 ![Grade](https://img.shields.io/badge/Grade-125%2F100-success?style=for-the-badge)
 
-[Features](#-features) •
-[Installation](#-installation) •
-[Usage](#-usage) •
-[Documentation](#-documentation) •
-[Testing](#-testing)
-
 </div>
 
 ---
